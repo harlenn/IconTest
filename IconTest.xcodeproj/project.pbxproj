@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181352131F5F9A5B6FA34507 /* libPods-IconTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 368938DD6D762B2B6E2575AE /* libPods-IconTest.a */; };
 		DF805AAD1F5CF885007938D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF805AAC1F5CF885007938D4 /* AppDelegate.m */; };
 		DF805AB01F5CF885007938D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF805AAF1F5CF885007938D4 /* ViewController.m */; };
 		DF805AB31F5CF885007938D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF805AB11F5CF885007938D4 /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		368938DD6D762B2B6E2575AE /* libPods-IconTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IconTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		848198DD439E9C2881490356 /* Pods-IconTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IconTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IconTest/Pods-IconTest.debug.xcconfig"; sourceTree = "<group>"; };
+		96D2643AA26CE01A54F582BA /* Pods-IconTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IconTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-IconTest/Pods-IconTest.release.xcconfig"; sourceTree = "<group>"; };
 		DF805AA81F5CF885007938D4 /* IconTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IconTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF805AAB1F5CF885007938D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DF805AAC1F5CF885007938D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181352131F5F9A5B6FA34507 /* libPods-IconTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C220158D988CAFB88E78AD6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				368938DD6D762B2B6E2575AE /* libPods-IconTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DF805A9F1F5CF885007938D4 = {
 			isa = PBXGroup;
 			children = (
 				DF805AAA1F5CF885007938D4 /* IconTest */,
 				DF805AA91F5CF885007938D4 /* Products */,
+				FCF53B35D53412D26F730CEC /* Pods */,
+				C220158D988CAFB88E78AD6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +86,15 @@
 			path = IconTest;
 			sourceTree = "<group>";
 		};
+		FCF53B35D53412D26F730CEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				848198DD439E9C2881490356 /* Pods-IconTest.debug.xcconfig */,
+				96D2643AA26CE01A54F582BA /* Pods-IconTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF805ABE1F5CF885007938D4 /* Build configuration list for PBXNativeTarget "IconTest" */;
 			buildPhases = (
+				A047C39839519BF07DB903A4 /* [CP] Check Pods Manifest.lock */,
 				DF805AA41F5CF885007938D4 /* Sources */,
 				DF805AA51F5CF885007938D4 /* Frameworks */,
 				DF805AA61F5CF885007938D4 /* Resources */,
+				029FFC130113108CA46D5D79 /* [CP] Embed Pods Frameworks */,
+				3204424E2AED9772A2693CCE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,73 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		029FFC130113108CA46D5D79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IconTest/Pods-IconTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3204424E2AED9772A2693CCE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IconTest/Pods-IconTest-resources.sh",
+				"${PODS_ROOT}/DBCamera/DBCamera/Resources/DBCameraImages.xcassets",
+				"${PODS_ROOT}/DBCamera/DBCamera/Localizations/DBCamera.bundle",
+				"${PODS_ROOT}/DBCamera/DBCamera/Filters/1977.acv",
+				"${PODS_ROOT}/DBCamera/DBCamera/Filters/amaro.acv",
+				"${PODS_ROOT}/DBCamera/DBCamera/Filters/Hudson.acv",
+				"${PODS_ROOT}/DBCamera/DBCamera/Filters/mayfair.acv",
+				"${PODS_ROOT}/DBCamera/DBCamera/Filters/Nashville.acv",
+				"${PODS_ROOT}/DBCamera/DBCamera/Filters/Valencia.acv",
+				"${PODS_ROOT}/DBCamera/DBCamera/Filters/Vignette.acv",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IconTest/Pods-IconTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A047C39839519BF07DB903A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IconTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DF805AA41F5CF885007938D4 /* Sources */ = {
@@ -275,9 +369,11 @@
 		};
 		DF805ABF1F5CF885007938D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 848198DD439E9C2881490356 /* Pods-IconTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S9A47M62JL;
 				INFOPLIST_FILE = IconTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.IconTest;
@@ -288,9 +384,11 @@
 		};
 		DF805AC01F5CF885007938D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96D2643AA26CE01A54F582BA /* Pods-IconTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S9A47M62JL;
 				INFOPLIST_FILE = IconTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.IconTest;
